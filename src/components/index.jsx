@@ -117,7 +117,7 @@ class MainPage extends React.Component {
     }
   };
 
-  handleMouseUp = (event) => {
+  handleMouseUp = () => {
     document.removeEventListener('mousemove', this.handleMouseMove);
     this.setState({
       isTopDragging: false,
@@ -173,7 +173,7 @@ class MainPage extends React.Component {
     }
 
     return (
-      <div>
+      <div className=''>
         <div className="main-content">
           <div className="sidebar">
             <NavbarBrand href="/">Make-a-Meme</NavbarBrand>
