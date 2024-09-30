@@ -160,7 +160,7 @@ class MainPage extends React.Component {
     const image = photos[this.state.currentImage];
     const base_image = new Image();
     base_image.src = image.src;
-    var wrh = base_image.width / base_image.height;
+    var wrh = (base_image.width / base_image.height);
     var newWidth = 600;
     var newHeight = newWidth / wrh;
     const textStyle = {
